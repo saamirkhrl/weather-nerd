@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@600&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap');
+
+body {
+  background-color: lightgray;
+  font-family: Roboto Mono;
+  font-weight: bolder;
+  margin: 0; /* Remove default body margin */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input {
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  border: 3px solid rgb(56, 56, 56);
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  transition: .25s;
+  letter-spacing: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input:focus {
+  outline: none;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.weather-data {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(107, 128, 146);
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 25px;
+  border-width: 10px;
+  padding: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.city {
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 10px;
+  border-width: 5px;
+  letter-spacing: 10px;
+}
+
+.temp {
+  font-size: 90px;
+  padding: 10px;
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 25px;
+  border-width: 5px;
+}
+
+.weather {
+  font-size: 35px;
+  font-weight: 200;
+  border-width: 15px;
+  border-radius: 10px;
+  border: 2px solid rgb(97, 97, 97);
+}
+
+.greet-msg {
+  font-size: 20px;
+}
+
+.github-link {
+  position: fixed;
+  bottom: 10px;
+  right: -300px; /* Set right to 10px to ensure it's on the farthest right side */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  height: auto;
+  max-width: 15%;
 }
